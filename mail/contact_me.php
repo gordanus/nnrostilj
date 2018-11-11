@@ -17,8 +17,8 @@ $message = $_POST['message'];
 $to = 'gordanus@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Poruka sa sajta od strane:  $name";
 $email_body = "Stigla je nova poruka sa sajta NN Roštilj.\n\n"."Detalji poruke:\n\nIme: $name\n\nEmail: $email_address\n\nTekst poruke:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers = "From: $email_address\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	
-mail($to,$email_subject,$email_body,$headers);
+mail($to,$email_subject,$email_body, $headers);
 return true;			
 ?>
