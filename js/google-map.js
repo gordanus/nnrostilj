@@ -47,7 +47,7 @@ function init() {
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'I am here!',
+        title: 'Preradovićeva 85',
         animation: google.maps.Animation.BOUNCE
         // icon: 'images/loc.png'
     });
