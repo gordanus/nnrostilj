@@ -175,7 +175,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) no-repeat center center;
+	background: url(../img/giphy-25.gif) no-repeat center center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -566,6 +566,13 @@ color: #777;
 #contact .contact-item p {
 	font-size: 16px;
 }
+#map {
+	height: 400px;
+	width: 100%; }
+	@media (max-width: 991.98px) {
+	  #map {
+		height: 300px; } }
+
 /* Footer Section*/
 #footer {
 	background: #262626;
